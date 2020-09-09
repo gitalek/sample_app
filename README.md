@@ -1,3 +1,5 @@
+Find this app running on Heroku: https://young-ocean-90638.herokuapp.com/
+
 # Ruby on Rails Tutorial sample application
 
 ## Getting started
