@@ -3,13 +3,14 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-gem 'bootsnap',   '1.4.6', require: false
+gem 'bootsnap', '1.4.6', require: false
+gem 'bootstrap-sass', '3.4.1'
 gem 'jbuilder',   '2.10.0'
 gem 'puma',       '4.3.5'
 gem 'rails',      '6.0.3.2'
 gem 'sass-rails', '6.0.0'
 gem 'turbolinks', '5.2.1'
-gem 'webpacker',  '4.2.2'
+gem 'webpacker', '4.2.2'
 
 group :development, :test do
   gem 'byebug',  '11.1.3', platforms: %i[mri mingw x64_mingw]
