@@ -3,6 +3,7 @@
 <head>
   <title><%= full_title(yield(:title)) %></title>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <%= csrf_meta_tags %>
   <%= csp_meta_tag %>
 
@@ -20,6 +21,8 @@
   <%= yield %>
   <%= render 'layouts/footer' %>
   <%= debug(params) if Rails.env.development? %>
+  <div><%= current_user || 'logged out' if Rails.env.development? %></div>
+  <div><%= session[:user_id] || 'nil session' if Rails.env.development? %></div>
 </div>
 </body>
 </html>
